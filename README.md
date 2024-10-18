@@ -1,96 +1,92 @@
-# Desafio de Apresentação Pessoal - Processo Seletivo Frontend Fusion - [cargo voluntário]
+# React + Vite + Tailwind CSS com animações
 
-## Sobre o Desafio
+# PUBLICADO NA VERCEL : https://rodrigobergenthal.vercel.app/
 
-Bem-vindo ao desafio de apresentação pessoal do processo seletivo do projeto Frontend Fusion para a vaga de Desenvolvedor React Júnior. Este desafio foi criado para avaliar suas habilidades em desenvolvimento com React e sua capacidade de criar uma página de apresentação pessoal.
 
-> OBS : Você receberá um e-mail com a data de início dos desafios, mas eles já estão disponíveis para acesso imediato. 
-Se ainda não preencheu o formulário, por favor, acesse o link para completá-lo.
-[Forms de inscrição](https://forms.gle/EJKDNKdmVZM3zQTr7)
-é importante está inscrito no formulário , pois o seu email precisa ser validado
 
-## Objetivo
+Este é um projeto de portfólio pessoal criado utilizando React, Vite e Tailwind CSS. O objetivo deste projeto é mostrar minhas habilidades em desenvolvimento web moderno, incluindo a importação de ícones, animações e componentes bem estruturados.
 
-Crie uma página de apresentação pessoal utilizando React com Vite. Esta página deve incluir:
+## Estrutura do Projeto
 
-- Seu nome
-- Uma breve descrição sobre você
-- Suas habilidades
-- Seus projetos recentes
-- Links para suas redes sociais (LinkedIn, GitHub, etc.)
+O projeto está organizado da seguinte forma:
 
-## Diferenciais
+- **src**: Pasta principal onde estão localizados todos os componentes principais e arquivos de estilo.
+  - **components**: Contém todos os componentes reutilizáveis, como Navbar, Hero, About, Projects e Contact.
+  - **App.jsx**: Arquivo que inicializa a aplicação e importa todos os componentes necessários.
+  - **index.css** e **App.css**: Arquivos de estilo global.
 
-Para se destacar, recomendamos implementar os seguintes diferenciais:
+## Dependências Utilizadas
 
-- **Tailwind CSS**: Utilize Tailwind CSS para estilizar sua página.
-- **Gerenciadores de Estado**: Utilize gerenciadores de estado como Redux ou Context API para gerenciar o estado da aplicação.
-- **Responsividade**: Certifique-se de que sua página seja totalmente responsiva e funcione bem em diferentes dispositivos.
-- **Boas Práticas de Código**: Siga boas práticas de código, como organização de arquivos, componentes reutilizáveis e uso adequado de hooks.
-- **Acessibilidade**: Implemente boas práticas de acessibilidade para garantir que sua página possa ser utilizada por todos.
-- **Animações e Transições**: Adicione animações e transições para melhorar a experiência do usuário.
-- **Commits Semânticos**: Utilize commits semânticos para manter um histórico de commits claro e organizado.
+- **React**: Biblioteca para construção de interfaces de usuário.
+- **Vite**: Bundler moderno com foco em velocidade e simplicidade.
+- **Tailwind CSS**: Framework CSS utilitário para design responsivo e estilização rápida.
+- **React Icons**: Para adicionar ícones personalizados ao projeto.
+- **Autoprefixer** e **PostCSS**: Para processamento de estilos com suporte a browsers antigos.
+- **Tailwind CSS Animated**: Extensão para animações no Tailwind CSS.
 
-## Entrega
+## Instalação
 
-Faça o deploy da sua aplicação em plataformas como GitHub Pages, Heroku, Vercel, Netlify, ou qualquer outra de sua preferência. Após concluir o desafio, envie o link do deploy e do repositório do código-fonte por e-mail para **projetofrontendfusion@gmail.com**. O e-mail deve incluir:
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/rodrigobergenthal/portifolio-react-e-taiwind---vite.git
+    cd portifolio-react-e-taiwind---vite
+    ```
 
-- Nome
-- Link do GitHub
-- Link do LinkedIn
-- Data de Início
-- Data de Entrega
-- Link do GitHub com o Código
-- Link do Deploy
+2. Instale as dependências:
+    ```bash
+    npm install
+    ```
 
-**Observação:** É obrigatório entregar os três desafios em até **20 dias** após o início. O desafio atual é a **Parte 01 de 03 desafios**.
+3. Execute o projeto em modo de desenvolvimento:
+    ```bash
+    npm run dev
+    ```
 
-## Prazo
+## Estrutura dos Componentes
 
-Você tem 20 dias para concluir todos os três desafios.
+### Navbar
 
-## Avaliação
+Componente responsável pela barra de navegação no topo da aplicação, contendo links para as diferentes seções do portfólio.
 
-Os critérios de avaliação incluirão:
+![Navbar](./src/assets/navbar.png)
 
-- Funcionalidade
-- Qualidade do código
-- Uso dos diferenciais mencionados
-- Estética e design
-- Responsividade
-- Acessibilidade
+### Hero
 
-## Como Participar
+Seção principal que apresenta uma mensagem de boas-vindas e um botão para entrar em contato.
 
-1. Faça um fork deste repositório.
-2. Desenvolva sua solução no seu repositório forkado.
-3. Após completar o desafio, envie o link do deploy e do repositório através do e-mail para **projetofrontendfusion@gmail.com** com o assunto: **"Entrega + Desafios[01] + Seu Nome"**.
+![Hero](./src/assets/hero.png)
 
-## Exemplo de E-mail:
+### About
 
-**Assunto:** Entrega + Desafios[01] + João Silva
+Uma seção sobre mim, onde explico brevemente sobre minhas habilidades e experiências.
 
----
+![About](./src/assets/about.png)
 
-Olá,
+### Projects
 
-Segue abaixo a entrega do Desafio 01 para o processo seletivo do Frontend Fusion.
+Lista de projetos que eu desenvolvi, cada um com uma breve descrição e imagens representativas.
 
-**Nome:** João Silva  
-**Link do GitHub:** [https://github.com/joaosilva](https://github.com/joaosilva)  
-**Link do LinkedIn:** [https://linkedin.com/in/joaosilva](https://linkedin.com/in/joaosilva)  
-**Data de Início:** 01/09/2024  
-**Data de Entrega:** 20/09/2024  
-**Link do GitHub com o Código:** [https://github.com/joaosilva/desafio01](https://github.com/joaosilva/desafio01)  
-**Link do Deploy:** [https://joaosilva.netlify.app](https://joaosilva.netlify.app)
+![Projects](./src/assets/projects.png)
 
-Agradeço a oportunidade e estou à disposição para qualquer dúvida.
+### Contact
 
-Atenciosamente,  
-João Silva
+Formulário para contato, onde os visitantes podem enviar mensagens diretamente para mim.
+
+![Contact](./src/assets/contact.png)
+
+## Personalização e Estilos
+
+O projeto utiliza Tailwind CSS para estilização, permitindo uma rápida e eficiente criação de designs responsivos. As animações são aplicadas usando a biblioteca `tailwindcss-animated`.
+
+## Contribuições
+
+Sinta-se à vontade para contribuir com melhorias no código, adicionar novos componentes ou corrigir bugs. Todas as contribuições são bem-vindas!
+
+## Licença
+
+Este projeto é licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 
-Boa sorte e estamos ansiosos para ver seu trabalho! 🚀
-
-Este desafio faz parte do processo seletivo do projeto Frontend Fusion para a vaga de Desenvolvedor React Júnior.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
